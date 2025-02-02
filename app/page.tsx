@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import Footer from "./footer/footer"
 
 export default function Component() {
   return (
@@ -170,6 +171,7 @@ export default function Component() {
         </aside>
       </div>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-border bg-dark text-foreground">
+        <Footer/>
         <p className="text-xs text-muted">&copy; 2024 Community Inc. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link href="#" className="text-xs hover:underline underline-offset-4 text-primary" prefetch={false}>
